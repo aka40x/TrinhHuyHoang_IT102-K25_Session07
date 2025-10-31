@@ -2,9 +2,9 @@
 
 int main() {
     int m, n;
-    printf("Nhap chieu dai m: ");
+    printf("Nhap chieu rong m: ");
     scanf("%d", &m);
-    printf("Nhap chieu rong n: ");
+    printf("Nhap chieu dai n: ");
     scanf("%d", &n);
 
     if (m <= 0 || n <= 0) {
@@ -12,8 +12,8 @@ int main() {
         return 1;
     }
 
-    for (int i = 0; i < m; i++) {
-        for (int j = 0; j < n; j++) {
+    for (int i = 1; i <= m; i++) {
+        for (int j = 1; j <= n; j++) {
             putchar('*');
         }
         putchar('\n');
@@ -21,4 +21,5 @@ int main() {
 
     return 0;
 }
+
 
